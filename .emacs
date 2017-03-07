@@ -41,3 +41,6 @@ vi style of % jumping to matching brace."
 
 ;; Define a key to mimic vi functionality
 (global-set-key (kbd "M-%") 'goto-match-paren)
+
+;; Allow for overwrite of selected region with yanked text
+(delete-selection-mode 1)
